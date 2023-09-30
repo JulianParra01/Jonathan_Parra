@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', 'Sen', 'Unbounded', monospace, sans-serif;
+}
+
+body{
+  background: linear-gradient(#08583f,#096649,#06402D);
+
+}
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Pixelify Sans', cursive;
+color: aliceblue;
+font-size: 3em;  
+text-align: center;
+}
+
+.boton_flotante {
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+}
+.boton_flotante img{
+  width: 5em;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(3, 56, 49, 0.288);
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar h1{
+  font-family: 'Inconsolata', monospace;
+font-family: 'Pixelify Sans', cursive;
+}
+.navbar img {
+  padding: 1px 10xp;
+  height: 5em; /* Ajusta el tamaño del logo según sea necesario */
+  
+}
+
+.cv{
+  justify-content: flex-start;
+}
+.contacto a{
+  justify-content: flex-start;
+}
+.navbar a {
+ 
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+.acerca_de_mi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+.acerca_de_mi_texto p{
+  padding: 20px 10px;
+}
+.acerca_de_mi_texto {
+ background:linear-gradient(rgba(16, 126, 111, 0.8),90%,rgba(6, 133, 116, 0.8)) ;
+ box-shadow: 15px 15px 1px rgba(56, 167, 106, 0.8);
+ color: #fff; 
+ font-size: 19px;
+  width: 40em;
+  border-radius: 20px;
+  margin: 3em;
+  padding: 1em;
+
+}
+
+.acerca_de_mi img {
+  background-size:cover; /* Escala la imagen para cubrir completamente la caja */
+  background-position: center;
+  width: 20em;
+  border-radius: 50%;
+}
+
+.container-fotos{
+  position: relative;
+  display: inline-block;
+}
+
+.logo{
+  position: absolute;
+   bottom: 0px; /* Ajusta esto según tu preferencia para posicionar la imagen pequeña en la esquina derecha */
+  right: 0px;
+}
+.logo img {
+  width: 6em;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Corregido */
+  justify-content: space-around;
+  margin: 1em 3em ;
+}
+
+.box {
+  min-height: 10em;
+  padding: 20px;
+  width: 350px;
+  color: aliceblue;
+  border-radius: 10px;
+  text-align: left;
+  background:linear-gradient(rgba(16, 126, 111, 0.8),90%,rgba(6, 133, 116, 0.8)) ;
+  box-shadow: 15px 15px 1px rgba(56, 167, 106, 0.8);
+  margin: 1rem  ;
+
+}
+
+
+
+/* Estilos CSS para la galería de fotos */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Estilos específicos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar img {
+    height: 30px;
+  }
+
+  /* Otros estilos específicos para pantallas más pequeñas */
+  /* ... */
+}
+
+section{
+  display: flex;
+  width: 900px;
+  height: 430px;
+  align-items:center ;
+  justify-content: center;
+}
+
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover{
+  width: 300px;
+  flex-grow: 2;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+@media (max-width: 768px) {
+  section{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:scroll;
+  }
+  section img{
+   flex: 1 0 auto;
+   margin: 0 50px;
+   width: 500px;
+   height: 500px;
+  }
+  
+}
